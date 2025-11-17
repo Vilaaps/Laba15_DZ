@@ -7,29 +7,27 @@
         mc:Ignorable="d"
  Title="Focus Timer" Height="450" Width="616">
     <Grid Margin="0,0,0,-6">
+
         <Grid.RowDefinitions>
             <RowDefinition Height="109*" />
             <RowDefinition Height="151*" />
             <RowDefinition Height="86*" />
             <RowDefinition Height="89*" />
-
         </Grid.RowDefinitions>
+
         <TextBlock x:Name="TimeText" HorizontalAlignment="Center"  Text="45:00" VerticalAlignment="Center" FontSize="48" Grid.Row="1" Height="61" Width="120" FontFamily="Arial"/>
+
         <Button Content="Старт" Width="138" Height="57" HorizontalAlignment="Left" Margin="138,10,0,0" Grid.Row="2" VerticalAlignment="Top" Click="start_click" FontSize="20" />
         <Button Content="Сброс" Width="138" Height="57" HorizontalAlignment="Left" Margin="313,10,0,0" Grid.Row="2" VerticalAlignment="Top" Click="sbros_click" RenderTransformOrigin="0.425,-1.582" FontSize="20" />
+
         <Label Content="Focus Timer" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Height="63" Width="296" FontFamily="MingLiU_HKSCS-ExtB" TextBlock.FontFamily="Arial" TextBlock.FontWeight="Bold" FontWeight="Bold"/>
         <Label Content="Продолжительность: " HorizontalAlignment="Left" Margin="138,10,0,0" Grid.Row="3" VerticalAlignment="Top" Height="35" Width="207" FontSize="18"/>
         <Label Content="мин." HorizontalAlignment="Left" Margin="411,10,0,0" Grid.Row="3" VerticalAlignment="Top" Height="35" Width="50" RenderTransformOrigin="0.768,-2.218" FontSize="18"/>
-
-
 
         <ComboBox x:Name="comboBoxTime" HorizontalAlignment="Left" Margin="331,15,0,0" Grid.Row="3" VerticalAlignment="Top" Width="70" Height="27" RenderTransformOrigin="-0.173,0.483" FontSize="18">
             <ComboBoxItem Content="15"/>
             <ComboBoxItem Content="25" IsSelected="True"/>
             <ComboBoxItem Content="45"/>
         </ComboBox>
-
-
-
     </Grid>
 </Window>
